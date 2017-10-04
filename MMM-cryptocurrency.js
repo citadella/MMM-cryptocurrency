@@ -19,7 +19,10 @@ Module.register("MMM-cryptocurrency", {
         litecoin: 2,
         'ethereum-classic': 1321,
         nem: 873,
-        stratis: 1343
+        stratis: 1343,
+	dash: 131,
+	decent: 1478,
+	foldincoin: 606,
     },
 
     start: function() {
@@ -33,7 +36,7 @@ Module.register("MMM-cryptocurrency", {
 
     getTicker: function() {
         var conversion = this.config.conversion;
-        var url = 'https://api.coinmarketcap.com/v1/ticker/?convert=' + conversion + '&limit=100';
+        var url = 'https://api.coinmarketcap.com/v1/ticker/?convert=' + conversion + '&limit=300';
         this.sendSocketNotification('get_ticker', url);
     },
 
