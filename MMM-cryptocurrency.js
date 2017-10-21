@@ -23,6 +23,7 @@ Module.register("MMM-cryptocurrency", {
 	dash: 131,
 	decent: 1478,
 	foldincoin: 606,
+	neo: 1376
     },
 
     start: function() {
